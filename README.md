@@ -25,7 +25,7 @@ And at least 2300uS between each frame.
 
 ### Data Table
 |Frame|Byte 0|Byte 1|Byte 2| Byte 3|Byte 4|Byte 5|Byte 6|Byte 7|Byte 8|Byte 9|Byte 10|Byte 11|
-|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 | 1 |  0x1| ?? | ?? | ?? | ?? | ?? | ?? | ?? | ?? | ?? | ?? | CRC |
 | 2 |  0x2| ?? | ?? | ?? | ?? | ?? | ?? | ?? | ?? | ?? | ?? | CRC |
 | 3 |  0x3| ?? | ?? | ?? | ?? | ?? | ?? | ?? | ?? | ?? | ?? | CRC |
@@ -45,7 +45,7 @@ And at least 2300uS between each frame.
 
 ### Itemized Communication
 | Item | Frame |  Byte| Bit | Bit Mask |
-|--|--|--|--|--|--|
+|---|---|---|---|---|---|
 | PLAY  |  |  |  | 0x00 | 
 | CUE  |  |  |  | 0x00 | 
 | Loop IN  |  |  |  | 0x00 | 
@@ -80,14 +80,14 @@ For every frame that is sent from the main assy, a response is sent back indicat
 The Jog wheen data and the Tempo pitch control data are not sent here, as they are wired directly to the main assy
 
 |Frame|Byte 0|Byte 1|Byte 2| Byte 3|Byte 4|Byte 5|Byte 6|Byte 7|Byte 8|Byte 9|Byte 10|Byte 11|Byte 12|
-|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 | 1 | ??| ?? | ?? | ?? | ?? | ?? | ?? | ?? | ?? | TOUCH/BREAK | RELEAE/START | ?? | CRC |
 
 
 ### Itemized Communication
 
 | Item | Frame |  Byte| Bit | Bit Mask |
-|--|--|--|--|--|--|
+|---|---|---|---|---|---|
 | PLAY  |  |  |  | 0x00 | 
 | CUE  |  |  |  | 0x00 | 
 | Loop IN  |  |  |  | 0x00 | 
