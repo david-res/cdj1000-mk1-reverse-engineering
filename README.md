@@ -53,21 +53,22 @@ And at least ``2300μs`` between each frame, I personally use ``3000μs``
 ### LED Control
 | Item | Frame |  Byte| Bit | Bit Mask |
 |---|---|---|---|---|
-| PLAY LED|  |  |  | 0x00 | 
-| CUE  LED|  |  |  | 0x00 | 
-| Direction  LED|  |  |  | 0x00 | 
-| Loop IN  LED|  |  |  | 0x00 | 
-| Loop OUT LED |  |  |  | 0x00 | 
-| Jog mode LED  |  |  |  | 0x00 | 
-| Master Tempo LED  |  |  |  | 0x00 | 
-| Tempo Reset LED  |  |  |  | 0x00 | 
-| SD CARD LED  |  |  |  | 0x00 | 
-| CUE A LED RED |  |  |  | 0x00 | 
-| CUE B LED RED|  |  |  | 0x00 | 
-| CUE C LED RED |  |  |  | 0x00 | 
-| CUE A LED GREEN |  |  |  | 0x00 | 
-| CUE B LED GREEN|  |  |  | 0x00 | 
-| CUE C LED GREEN |  |  |  | 0x00 |
+| PLAY LED| 10 | 9 |  | 0x02 | 
+| CUE  LED| 10 | 9  |  | 0x04 | 
+| Direction  LED| 10| 9 |  | 0x01 | 
+| Loop IN  LED| 11 | 1 |  | 0x40 | 
+| Loop OUT LED | 11 | 1 |  | 0x80 | 
+| Jog mode CDJ LED | 10 | 9 |  | 0x80 |
+| Jog mode CDJ LED | 11 | 2 |  | 0x01 | 
+| Master Tempo LED | 10 | 9 |  | 0x20 | 
+| Tempo Reset LED  | 10 | 9 |  | 0x10 | 
+| SD CARD LED  | 10 | 9  |  | 0x08 | 
+| CUE A LED RED | 11 | 1 |  | 0x01 | 
+| CUE B LED RED | 11 | 1 |  | 0x04 | 
+| CUE C LED RED | 11 | 1 |  | 0x10 | 
+| CUE A LED GREEN | 11 | 1 |  | 0x02 | 
+| CUE B LED GREEN | 11 | 1 |  | 0x08 | 
+| CUE C LED GREEN | 11 | 1 |  | 0x20 |
 
 </br>
 </br>
