@@ -30,7 +30,7 @@ And at least ``2300μs`` between each frame, I personally use ``3000μs``
 </br>
 
 In the ``/examples`` folder you will find a test sketch for a Teensy 4.x using the standard SPI library and pins to control/read the display assy and will turn all the LEDs on, as well as print out frames of button statuses.
-![cdj leds on](/resources/CJ1000_mk1_leds_on.jpeg)
+![cdj leds on](/resources/CDJ1000_mk1_leds_on.jpeg)
 
 </br>
 
