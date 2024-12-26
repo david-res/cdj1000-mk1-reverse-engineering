@@ -123,7 +123,7 @@ The Jog wheen data and the Tempo pitch control data are not sent here, as they a
 | Wave Search FWD | 6 |  | 0x02 | 
 | Call Search FWD | 6 |  | 0x01 | 
 | Tempo Range  | 6 |  | 0x80 | 
-| Master Tempo | 6 |  |  | 0x40 | 
+| Master Tempo | 6 |  | 0x40 | 
 | Tempo Reset | 6 |  | 0x20 | 
 | Eject  | 6 |  | 0x10 | 
 | Jog Mode  | 6 |  | 0x04 |  
