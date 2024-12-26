@@ -25,6 +25,8 @@ And at least ``2300μs`` between each frame, I personally use ``3000μs``
 
 ![spi la](/resources/cdj1000_mk1_logic_analyzer.png)
 
+</br>
+</br>
 
 ## Main Assy to Display Assy
 
@@ -67,8 +69,10 @@ And at least ``2300μs`` between each frame, I personally use ``3000μs``
 | CUE B LED GREEN|  |  |  | 0x00 | 
 | CUE C LED GREEN |  |  |  | 0x00 |
 
-
-
+</br>
+</br>
+</br>
+</br>
 
 
 ## Display Assy to Main Assy
