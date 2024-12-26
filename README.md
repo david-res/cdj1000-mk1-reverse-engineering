@@ -92,35 +92,36 @@ The Jog wheen data and the Tempo pitch control data are not sent here, as they a
 | Item |  Byte| Bit | Bit Mask |
 |---|---|---|---|
 | PLAY  |  |  | 0x00 | 
-| CUE  |  |  | 0x00 | 
+| CUE  | 3 |  | 0x40 | 
 | Track  FWD  |  |  | 0x00 | 
 | Track  BWD  |  |  | 0x00 | 
 | Track Search FWD  |  |  | 0x00 | 
-| Track Search BWD  |  |  | 0x00 | 
-| Play Direction  |  |  | 0x00 | 
-| CUE A  |  |  | 0x00 | 
-| CUE B  |  |  | 0x00 | 
-| CUE C  |  |  | 0x00 | 
-| CUE Rec  |  |  | 0x00 | 
-| Time mode  |  |  | 0x00 | 
-| CD Text/Wave   |  |  | 0x00 | 
-| Loop IN  |  |  | 0x00 | 
-| Loop OUT  |  |  | 0x00 |
-| Loop Reloop/Exit |  |  | 0x00 | 
-| Wave Search BWD |  |  | 0x00 | 
-| Wave Search FWD |  |  | 0x00 | 
-| Call Search BWD |  |  | 0x00 | 
-| Call Search FWD |  |  | 0x00 | 
-| Delete |  |  | 0x00 | 
-| Memory |  |  | 0x00 |
-| Eject  |  |  | 0x00 | 
-| Lock  |  |  | 0x00 | 
+| Track Search BWD  | 2 |  | 0x10 | 
+| CUE A  | 4 |  | 0x80 | 
+| CUE B  | 4 |  | 0x40 | 
+| CUE C  | 4 |  | 0x20 | 
+| CUE Rec  | 4 |  | 0x10 | 
+| Time mode  | 4 |  | 0x08 | 
+| CD Text/Wave |  |  | 0x00 | 
+| Loop IN  | 5 |  | 0x80 | 
+| Loop OUT  | 5 |  | 0x40 |
+| Loop Reloop/Exit | 5 |  | 0x20 | 
+| Wave Search BWD | 5 |  | 0x10 | 
+| Call Search BWD | 5 |  | 0x08 |
+| Memory | 5 |  | 0x04 | 
+| Delete | 5 |  | 0x02 | 
+| Wave Search FWD | 6 |  | 0x02 | 
+| Call Search FWD | 6 |  | 0x01 | 
+| Tempo Range  | 6 |  | 0x80 | 
+| Master Tempo | 6 |  |  | 0x40 | 
+| Tempo Reset | 6 |  | 0x20 | 
+| Eject  | 6 |  | 0x10 | 
+| Jog Mode  | 6 |  | 0x04 |  
+| Play Direction  | 7 |  | 0x01 |
+| Lock | 7 |  | 0x02 |  
 | TOUCH/BREAK  | 8 | -- | 0-254 | 
 | RELEASE/START  | 9 | -- | 0-254 | 
-| Jog Mode  |  |  | 0x00 |  
-| Tempo Range  |  |  | 0x00 | 
-| Master Tempo |  |  |  | 0x00 | 
-| Tempo Reset |  |  | 0x00 | 
+
 
 
 
