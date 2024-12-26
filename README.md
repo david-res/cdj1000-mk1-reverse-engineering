@@ -10,7 +10,8 @@ There is no CS line between the master and the salve, but rather a Busy signal f
 
 Data signals can be found here:
 ![spi signals](/resources/cdj_1000_component_map-spi_pins.png)
-
+</br>
+</br>
 Each data sequence contains 12 frames.
 Each frame contains 12 bytes, where the 1st byte of each frame indicates the frame number in the sequence, and the last byte is a CRC. 
 
@@ -25,12 +26,15 @@ And at least ``2300μs`` between each frame, I personally use ``3000μs``
 
 ![spi la](/resources/cdj1000_mk1_logic_analyzer.png)
 
-
-In the /examples folder you will find a test sketch for a Teensy 4.x using the standard SPI library and pins to control/read the display assy and will turn all the LEDs on, as well as print out frames of button statuses.
+</br>
+</br>
+In the ``/examples`` folder you will find a test sketch for a Teensy 4.x using the standard SPI library and pins to control/read the display assy and will turn all the LEDs on, as well as print out frames of button statuses.
 ![cdj leds on](/resources/CDJ1000_mk1_leds_on.jpeg)
 **NOTE #1** -  The display assy uses 5 volt logic, and therefore a 5v to 3.3v logic level shifter is required!!
 **NOTE #2** - The image above is MK1 PCBs with an MK2 case - I cannot guarentee that this will work on an MK2. And if you're after an MK3 then [look here](https://github.com/djgreeb/CDJ-1000mk3_new_life_project/blob/master/Reverse%20Engineering%20Pioneer%20CDJ-1000%20serial%20protocol.pdf)
 
+</br>
+</br>
 </br>
 </br>
 
@@ -51,10 +55,8 @@ In the /examples folder you will find a test sketch for a Teensy 4.x using the s
 | 10 |  0xA| LED CTRL | LED CTRL | ?? | ?? | ?? | ?? | ?? | ?? | ?? | ?? | CRC |
 | 11 |  0xB| ?? | ?? | ?? | ?? | ?? | ?? | ?? | ?? | ?? | ?? | CRC |
 | 12 |  0xC| ?? | ?? | ?? | ?? | ?? | ?? | ?? | ?? | ?? | ?? | CRC |
-
-
-
-
+</br>
+</br>
 
 ### LED Control
 | Item | Frame |  Byte| Bit | Bit Mask |
@@ -75,12 +77,6 @@ In the /examples folder you will find a test sketch for a Teensy 4.x using the s
 | CUE A LED GREEN | 11 | 1 |  | 0x02 |
 | CUE A LED RED | 11 | 1 |  | 0x01 | 
 | Jog mode CDJ LED | 11 | 2 |  | 0x01 | 
-
-
- 
- 
-
-
 </br>
 </br>
 </br>
@@ -97,9 +93,9 @@ The Jog wheen data and the Tempo pitch control data are not sent here, as they a
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 | 1 | ??| ?? | ?? | ?? | ?? | ?? | ?? | ?? | TOUCH/BREAK | RELEAE/START | ?? | CRC |
 
-
+</br>
+</br>
 ### Panel outputs
-
 | Item |  Byte| Bit | Bit Mask |
 |---|---|---|---|
 | PLAY  |  |  | 0x00 | 
