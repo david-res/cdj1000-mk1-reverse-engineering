@@ -55,6 +55,7 @@ In the ``/examples`` folder you will find a test sketch for a Teensy 4.x using t
 | 10 |  0xA| LED CTRL | LED CTRL | ?? | ?? | ?? | ?? | ?? | ?? | ?? | ?? | CRC |
 | 11 |  0xB| ?? | ?? | ?? | ?? | ?? | ?? | ?? | ?? | ?? | ?? | CRC |
 | 12 |  0xC| ?? | ?? | ?? | ?? | ?? | ?? | ?? | ?? | ?? | ?? | CRC |
+
 </br>
 </br>
 
@@ -77,6 +78,7 @@ In the ``/examples`` folder you will find a test sketch for a Teensy 4.x using t
 | CUE A LED GREEN | 11 | 1 |  | 0x02 |
 | CUE A LED RED | 11 | 1 |  | 0x01 | 
 | Jog mode CDJ LED | 11 | 2 |  | 0x01 | 
+
 </br>
 </br>
 </br>
@@ -95,6 +97,7 @@ The Jog wheen data and the Tempo pitch control data are not sent here, as they a
 
 </br>
 </br>
+
 ### Panel outputs
 | Item |  Byte| Bit | Bit Mask |
 |---|---|---|---|
