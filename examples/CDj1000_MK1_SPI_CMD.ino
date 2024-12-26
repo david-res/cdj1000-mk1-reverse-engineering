@@ -61,10 +61,7 @@ void setup() {
   Serial.begin(115200);
   Serial.println("Initializing...");
 
- 
-  
 
-  
   // Handle reset linedelay
   digitalWrite(RESET_PIN, LOW);
   delay(100);
@@ -77,7 +74,6 @@ void setup() {
 }
 
 void loop() {
-  //while (digitalReadFast(WAIT_PIN) == LOW);
   Serial.println("----------------Start sequence-----------------");
   Serial.println("");
   
@@ -89,27 +85,18 @@ void loop() {
     memcpy(frame, frames[frameIndex], 11);
     frame[11] = calculateCRC(frame, 11);
 
-
     // Send the frame byte by byte
     SPI.beginTransaction(spiSettings);
     for (size_t i = 0; i < 12; i++) {
       //Wait for WAIT_PIN to go HIGH
-      
       while (digitalReadFast(WAIT_PIN) == LOW);
-      
       rxBuffer[i] = SPI.transfer(frame[i]); // Send byte and store the received byte
-      
       delayMicroseconds(200);
       
       
     }
     
-    
-
-    // Print the received frame
-  //if(frameIndex==0){
     printFrame("Received Frame:", rxBuffer, 12);
-  //}
 
    // Delay between frames
     SPI.endTransaction();
