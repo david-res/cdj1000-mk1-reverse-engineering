@@ -53,22 +53,27 @@ And at least ``2300μs`` between each frame, I personally use ``3000μs``
 ### LED Control
 | Item | Frame |  Byte| Bit | Bit Mask |
 |---|---|---|---|---|
-| PLAY LED| 10 | 9 |  | 0x02 | 
-| CUE  LED| 10 | 9  |  | 0x04 | 
-| Direction  LED| 10| 9 |  | 0x01 | 
-| Loop IN  LED| 11 | 1 |  | 0x40 | 
-| Loop OUT LED | 11 | 1 |  | 0x80 | 
 | Jog mode CDJ LED | 10 | 9 |  | 0x80 |
-| Jog mode CDJ LED | 11 | 2 |  | 0x01 | 
 | Master Tempo LED | 10 | 9 |  | 0x20 | 
 | Tempo Reset LED  | 10 | 9 |  | 0x10 | 
-| SD CARD LED  | 10 | 9  |  | 0x08 | 
-| CUE A LED RED | 11 | 1 |  | 0x01 | 
-| CUE B LED RED | 11 | 1 |  | 0x04 | 
-| CUE C LED RED | 11 | 1 |  | 0x10 | 
-| CUE A LED GREEN | 11 | 1 |  | 0x02 | 
-| CUE B LED GREEN | 11 | 1 |  | 0x08 | 
+| SD CARD LED  | 10 | 9  |  | 0x08 |
+| CUE  LED| 10 | 9  |  | 0x04 | 
+| PLAY LED| 10 | 9 |  | 0x02 | 
+| Direction  LED| 10| 9 |  | 0x01 | 
+| Loop OUT LED | 11 | 1 |  | 0x80 | 
+| Loop IN  LED| 11 | 1 |  | 0x40 | 
 | CUE C LED GREEN | 11 | 1 |  | 0x20 |
+| CUE C LED RED | 11 | 1 |  | 0x10 | 
+| CUE B LED GREEN | 11 | 1 |  | 0x08 |
+| CUE B LED RED | 11 | 1 |  | 0x04 | 
+| CUE A LED GREEN | 11 | 1 |  | 0x02 |
+| CUE A LED RED | 11 | 1 |  | 0x01 | 
+| Jog mode CDJ LED | 11 | 2 |  | 0x01 | 
+
+
+ 
+ 
+
 
 </br>
 </br>
@@ -92,11 +97,11 @@ The Jog wheen data and the Tempo pitch control data are not sent here, as they a
 | Item |  Byte| Bit | Bit Mask |
 |---|---|---|---|
 | PLAY  |  |  | 0x00 | 
-| CUE  | 3 |  | 0x40 | 
 | Track  FWD  |  |  | 0x00 | 
 | Track  BWD  |  |  | 0x00 | 
 | Track Search FWD  |  |  | 0x00 | 
 | Track Search BWD  | 2 |  | 0x10 | 
+| CUE  | 3 |  | 0x40 | 
 | CUE A  | 4 |  | 0x80 | 
 | CUE B  | 4 |  | 0x40 | 
 | CUE C  | 4 |  | 0x20 | 
