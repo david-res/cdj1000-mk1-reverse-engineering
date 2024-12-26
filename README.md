@@ -58,7 +58,7 @@ In the ``/examples`` folder you will find a test sketch for a Teensy 4.x using t
 | 6 |  0x6| ?? | ?? | ?? | ?? | ?? | ?? | ?? | ?? | ?? | ?? | CRC |
 | 7 |  0x7| ?? | ?? | ?? | ?? | ?? | ?? | ?? | ?? | ?? | ?? | CRC |
 | 8 |  0x8| ?? | ?? | ?? | ?? | ?? | ?? | ?? | ?? | ?? | ?? | CRC |
-| 9 |  0x9| ?? | ?? | ?? | ?? | ?? | ?? | ?? | ?? | ?? | LED CTRL |CRC |
+| 9 |  0x9| ?? | ?? | ?? | ?? | ?? | ?? | ?? | ?? | LED CTRL | ?? |CRC |
 | 10 |  0xA| LED CTRL | LED CTRL | ?? | ?? | ?? | ?? | ?? | ?? | ?? | ?? | CRC |
 | 11 |  0xB| ?? | ?? | ?? | ?? | ?? | ?? | ?? | ?? | ?? | ?? | CRC |
 | 12 |  0xC| ?? | ?? | ?? | ?? | ?? | ?? | ?? | ?? | ?? | ?? | CRC |
@@ -69,22 +69,22 @@ In the ``/examples`` folder you will find a test sketch for a Teensy 4.x using t
 ### LED Control
 | Item | Frame |  Byte| Bit | Bit Mask |
 |---|:---:|:---:|:---:|:---:|
-| Jog mode CDJ LED | 10 | 9 | 7 | 0x80 |
-| Master Tempo LED | 10 | 9 | 5 | 0x20 | 
-| Tempo Reset LED  | 10 | 9 | 4  | 0x10 | 
-| SD CARD LED  | 10 | 9  | 3 | 0x08 |
-| CUE  LED| 10 | 9  | 2 | 0x04 | 
-| PLAY LED| 10 | 9 | 1 | 0x02 | 
-| Direction  LED| 10| 9 | 0 | 0x01 | 
-| Loop OUT LED | 11 | 1 | 7 | 0x80 | 
-| Loop IN  LED| 11 | 1 | 6 | 0x40 | 
-| CUE C LED GREEN | 11 | 1 | 5 | 0x20 |
-| CUE C LED RED | 11 | 1 | 4 | 0x10 | 
-| CUE B LED GREEN | 11 | 1 | 3 | 0x08 |
-| CUE B LED RED | 11 | 1 | 2 | 0x04 | 
-| CUE A LED GREEN | 11 | 1 | 1 | 0x02 |
-| CUE A LED RED | 11 | 1 | 0 | 0x01 | 
-| Jog mode CDJ LED | 11 | 2 | 0 | 0x01 | 
+| Jog mode CDJ LED | 9 | 9 | 7 | 0x80 |
+| Master Tempo LED | 9 | 9 | 5 | 0x20 | 
+| Tempo Reset LED  | 9 | 9 | 4  | 0x10 | 
+| SD CARD LED  | 9 | 9  | 3 | 0x08 |
+| CUE  LED| 9 | 9  | 2 | 0x04 | 
+| PLAY LED| 9 | 9 | 1 | 0x02 | 
+| Direction  LED| 9| 9 | 0 | 0x01 | 
+| Loop OUT LED | 10 | 1 | 7 | 0x80 | 
+| Loop IN  LED| 10 | 1 | 6 | 0x40 | 
+| CUE C LED GREEN | 10 | 1 | 5 | 0x20 |
+| CUE C LED RED | 10 | 1 | 4 | 0x10 | 
+| CUE B LED GREEN | 10 | 1 | 3 | 0x08 |
+| CUE B LED RED | 10 | 1 | 2 | 0x04 | 
+| CUE A LED GREEN | 10 | 1 | 1 | 0x02 |
+| CUE A LED RED | 10 | 1 | 0 | 0x01 | 
+| Jog mode CDJ LED | 10 | 2 | 0 | 0x01 | 
 
 </br>
 </br>
