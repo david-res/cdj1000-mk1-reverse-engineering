@@ -83,13 +83,13 @@ The Jog wheen data and the Tempo pitch control data are not sent here, as they a
 
 | Frame | Byte 0 | Byte 1 | Byte 2 | Byte 3 | Byte 4 | Byte 5 | Byte 6 | Byte 7 | Byte 8 | Byte 9 | Byte 10 | Byte 11 |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| 1 | ??| ?? | ?? | ?? | ?? | ?? | ?? | ?? | ?? | TOUCH/BREAK | RELEAE/START | ?? | CRC |
+| 1 | ??| ?? | ?? | ?? | ?? | ?? | ?? | ?? | TOUCH/BREAK | RELEAE/START | ?? | CRC |
 
 
 ### Panel outputs
 
 | Item |  Byte| Bit | Bit Mask |
-|---|---|---|---|---|
+|---|---|---|---|
 | PLAY  |  |  | 0x00 | 
 | CUE  |  |  | 0x00 | 
 | Track  FWD  |  |  | 0x00 | 
