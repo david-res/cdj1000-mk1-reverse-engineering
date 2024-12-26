@@ -3,6 +3,8 @@
 
 This repository documents the SPI communication between the Main Assembly and the Display Assembly of the Pioneer DJ CDJ-1000MK1.
 
+I do not need the main VDF display or Jog wheel VFD display, and therefore their control parameters are not logged here.
+
 The communication between the CDJ main assy and the dislay assy is over SPI running at 1Mhz, MODE3, LSB First
 There is no CS line between the master and the salve, but rather a Busy signal from the slave to the master - it's Active Low - and you need to wait until it goes high to send data.
 
@@ -10,13 +12,16 @@ Data signals can be found here:
 ![spi signals](/resources/cdj_1000_component_map-spi_pins.png)
 
 Each data sequence contains 12 frames.
-Each frame contains 12 bytes, where the 1st byte of each frame indicates the frame number in the sequence, and the last byte is a CRC (Byte0+Byte1+...Byte9+Byte10%256)
+Each frame contains 12 bytes, where the 1st byte of each frame indicates the frame number in the sequence, and the last byte is a CRC. 
+
+``CRC = (Byte0+Byte1+...Byte9+Byte10)%256``
+
 
 For each frame sent to the display assy, a 12 byte response is ent back
 The response back is a single 12 byte frame and is repeated for every message sent to the display control unit - regarless of index.
 
-Timing is crucial. At least 50nS between each is required - I've found 200nS to be the stable number
-And at least 2300uS between each frame.
+Timing is crucial. At least ``50μs`` between each byte is required - I've found ``200μs`` to be the stable number
+And at least ``2300μs`` between each frame, I personally use ``3000μs``
 
 ![spi la](/resources/cdj1000_mk1_logic_analyzer.png)
 
@@ -61,7 +66,6 @@ And at least 2300uS between each frame.
 | CUE A LED GREEN |  |  |  | 0x00 | 
 | CUE B LED GREEN|  |  |  | 0x00 | 
 | CUE C LED GREEN |  |  |  | 0x00 |
-
 
 
 
