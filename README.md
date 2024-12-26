@@ -35,7 +35,10 @@ In the ``/examples`` folder you will find a test sketch for a Teensy 4.x using t
 </br>
 
 **NOTE #1** -  The display assy uses 5 volt logic, and therefore a 5v to 3.3v logic level shifter is required!!
-**NOTE #2** - The image above is MK1 PCBs with an MK2 case - I cannot guarentee that this will work on an MK2. And if you're after an MK3 then [look here](https://github.com/djgreeb/CDJ-1000mk3_new_life_project/blob/master/Reverse%20Engineering%20Pioneer%20CDJ-1000%20serial%20protocol.pdf)
+
+**NOTE #2** - The display assy and LEDs need to be powered by 5v and 12v respectivly - see the pins in the 1st image above
+
+**NOTE #3** - The image above is MK1 PCBs with an MK2 case - I cannot guarentee that this will work on an MK2. And if you're after an MK3 then [look here](https://github.com/djgreeb/CDJ-1000mk3_new_life_project/blob/master/Reverse%20Engineering%20Pioneer%20CDJ-1000%20serial%20protocol.pdf)
 
 </br>
 </br>
