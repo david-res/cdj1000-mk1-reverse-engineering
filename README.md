@@ -66,22 +66,22 @@ In the ``/examples`` folder you will find a test sketch for a Teensy 4.x using t
 ### LED Control
 | Item | Frame |  Byte| Bit | Bit Mask |
 |---|:---:|:---:|:---:|:---:|
-| Jog mode CDJ LED | 10 | 9 |  | 0x80 |
-| Master Tempo LED | 10 | 9 |  | 0x20 | 
-| Tempo Reset LED  | 10 | 9 |  | 0x10 | 
-| SD CARD LED  | 10 | 9  |  | 0x08 |
-| CUE  LED| 10 | 9  |  | 0x04 | 
-| PLAY LED| 10 | 9 |  | 0x02 | 
-| Direction  LED| 10| 9 |  | 0x01 | 
-| Loop OUT LED | 11 | 1 |  | 0x80 | 
-| Loop IN  LED| 11 | 1 |  | 0x40 | 
-| CUE C LED GREEN | 11 | 1 |  | 0x20 |
-| CUE C LED RED | 11 | 1 |  | 0x10 | 
-| CUE B LED GREEN | 11 | 1 |  | 0x08 |
-| CUE B LED RED | 11 | 1 |  | 0x04 | 
-| CUE A LED GREEN | 11 | 1 |  | 0x02 |
-| CUE A LED RED | 11 | 1 |  | 0x01 | 
-| Jog mode CDJ LED | 11 | 2 |  | 0x01 | 
+| Jog mode CDJ LED | 10 | 9 | 7 | 0x80 |
+| Master Tempo LED | 10 | 9 | 5 | 0x20 | 
+| Tempo Reset LED  | 10 | 9 | 4  | 0x10 | 
+| SD CARD LED  | 10 | 9  | 3 | 0x08 |
+| CUE  LED| 10 | 9  | 2 | 0x04 | 
+| PLAY LED| 10 | 9 | 1 | 0x02 | 
+| Direction  LED| 10| 9 | 0 | 0x01 | 
+| Loop OUT LED | 11 | 1 | 7 | 0x80 | 
+| Loop IN  LED| 11 | 1 | 6 | 0x40 | 
+| CUE C LED GREEN | 11 | 1 | 5 | 0x20 |
+| CUE C LED RED | 11 | 1 | 4 | 0x10 | 
+| CUE B LED GREEN | 11 | 1 | 3 | 0x08 |
+| CUE B LED RED | 11 | 1 | 2 | 0x04 | 
+| CUE A LED GREEN | 11 | 1 | 1 | 0x02 |
+| CUE A LED RED | 11 | 1 | 0 | 0x01 | 
+| Jog mode CDJ LED | 11 | 2 | 0 | 0x01 | 
 
 </br>
 </br>
@@ -109,30 +109,30 @@ The Jog wheen data and the Tempo pitch control data are not sent here, as they a
 | Track  FWD  |  |  | 0x00 | 
 | Track  BWD  |  |  | 0x00 | 
 | Track Search FWD  |  |  | 0x00 | 
-| Track Search BWD  | 2 |  | 0x10 | 
-| CUE  | 3 |  | 0x40 | 
-| CUE A  | 4 |  | 0x80 | 
-| CUE B  | 4 |  | 0x40 | 
-| CUE C  | 4 |  | 0x20 | 
-| CUE Rec  | 4 |  | 0x10 | 
-| Time mode  | 4 |  | 0x08 | 
+| Track Search BWD  | 2 | 4 | 0x10 | 
+| CUE  | 3 | 6 | 0x40 | 
+| CUE A  | 4 | 7 | 0x80 | 
+| CUE B  | 4 | 6 | 0x40 | 
+| CUE C  | 4 | 5 | 0x20 | 
+| CUE Rec  | 4 | 4 | 0x10 | 
+| Time mode  | 4 |  3| 0x08 | 
 | CD Text/Wave |  |  | 0x00 | 
-| Loop IN  | 5 |  | 0x80 | 
-| Loop OUT  | 5 |  | 0x40 |
-| Loop Reloop/Exit | 5 |  | 0x20 | 
-| Wave Search BWD | 5 |  | 0x10 | 
-| Call Search BWD | 5 |  | 0x08 |
-| Memory | 5 |  | 0x04 | 
-| Delete | 5 |  | 0x02 | 
-| Wave Search FWD | 6 |  | 0x02 | 
-| Call Search FWD | 6 |  | 0x01 | 
-| Tempo Range  | 6 |  | 0x80 | 
-| Master Tempo | 6 |  | 0x40 | 
-| Tempo Reset | 6 |  | 0x20 | 
-| Eject  | 6 |  | 0x10 | 
-| Jog Mode  | 6 |  | 0x04 |  
-| Play Direction  | 7 |  | 0x01 |
-| Lock | 7 |  | 0x02 |  
+| Loop IN  | 5 | 7 | 0x80 | 
+| Loop OUT  | 5 | 6 | 0x40 |
+| Loop Reloop/Exit | 5 | 5 | 0x20 | 
+| Wave Search BWD | 5 | 4 | 0x10 | 
+| Call Search BWD | 5 | 3 | 0x08 |
+| Memory | 5 | 2 | 0x04 | 
+| Delete | 5 | 1 | 0x02 | 
+| Wave Search FWD | 6 | 1 | 0x02 | 
+| Call Search FWD | 6 | 0 | 0x01 | 
+| Tempo Range  | 6 | 7 | 0x80 | 
+| Master Tempo | 6 | 6 | 0x40 | 
+| Tempo Reset | 6 | 5 | 0x20 | 
+| Eject  | 6 | 4 | 0x10 | 
+| Jog Mode  | 6 | 2 | 0x04 |  
+| Play Direction  | 7 | 0 | 0x01 |
+| Lock | 7 | 1 | 0x02 |  
 | TOUCH/BREAK  | 8 | -- | 0-254 | 
 | RELEASE/START  | 9 | -- | 0-254 | 
 
