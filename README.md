@@ -104,7 +104,7 @@ The Jog wheen data and the Tempo pitch control data are not sent here, as they a
 
 ### Panel outputs
 | Item |  Byte| Bit | Bit Mask |
-|:---|:---:|:---::---:|
+|:---|:---:|:---:|:---:|
 | PLAY  |  |  | 0x00 | 
 | Track  FWD  |  |  | 0x00 | 
 | Track  BWD  |  |  | 0x00 | 
@@ -115,7 +115,7 @@ The Jog wheen data and the Tempo pitch control data are not sent here, as they a
 | CUE B  | 4 | 6 | 0x40 | 
 | CUE C  | 4 | 5 | 0x20 | 
 | CUE Rec  | 4 | 4 | 0x10 | 
-| Time mode  | 4 |  3| 0x08 | 
+| Time mode  | 4 | 3 | 0x08 | 
 | CD Text/Wave |  |  | 0x00 | 
 | Loop IN  | 5 | 7 | 0x80 | 
 | Loop OUT  | 5 | 6 | 0x40 |
