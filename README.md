@@ -17,7 +17,7 @@ Each frame contains 12 bytes, where the 1st byte of each frame indicates the fra
 ``CRC = (Byte0+Byte1+...Byte9+Byte10)%256``
 
 
-For each frame sent to the display assy, a 12 byte response is ent back
+For each frame sent to the display assy, a 12 byte response is sent back
 The response back is a single 12 byte frame and is repeated for every message sent to the display control unit - regarless of index.
 
 Timing is crucial. At least ``50μs`` between each byte is required - I've found ``200μs`` to be the stable number
@@ -88,22 +88,38 @@ The Jog wheen data and the Tempo pitch control data are not sent here, as they a
 
 ### Panel outputs
 
-| Item | Frame |  Byte| Bit | Bit Mask |
+| Item |  Byte| Bit | Bit Mask |
 |---|---|---|---|---|
-| PLAY  |  |  |  | 0x00 | 
-| CUE  |  |  |  | 0x00 | 
-| Loop IN  |  |  |  | 0x00 | 
-| Loop OUT  |  |  |  | 0x00 | 
-| Loop Exit  |  |  |  | 0x00 | 
-| Tempo Range  |  |  |  | 0x00 | 
-| Tempo Lock  |  |  |  | 0x00 | 
-| Tempo Reset  |  |  |  | 0x00 | 
-| Play Direction  |  |  |  | 0x00 | 
-| Eject  |  |  |  | 0x00 | 
-| CUE A  |  |  |  | 0x00 | 
-| CUE B  |  |  |  | 0x00 | 
-| CUE C  |  |  |  | 0x00 | 
-| CUE Rec  |  |  |  | 0x00 | 
-| Lock  |  |  |  | 0x00 | 
-| Lock  |  |  |  | 0x00 | 
-| Lock  |  |  |  | 0x00 | 
+| PLAY  |  |  | 0x00 | 
+| CUE  |  |  | 0x00 | 
+| Track  FWD  |  |  | 0x00 | 
+| Track  BWD  |  |  | 0x00 | 
+| Track Search FWD  |  |  | 0x00 | 
+| Track Search BWD  |  |  | 0x00 | 
+| Play Direction  |  |  | 0x00 | 
+| CUE A  |  |  | 0x00 | 
+| CUE B  |  |  | 0x00 | 
+| CUE C  |  |  | 0x00 | 
+| CUE Rec  |  |  | 0x00 | 
+| Time mode  |  |  | 0x00 | 
+| CD Text/Wave   |  |  | 0x00 | 
+| Loop IN  |  |  | 0x00 | 
+| Loop OUT  |  |  | 0x00 |
+| Loop Reloop/Exit |  |  | 0x00 | 
+| Wave Search BWD |  |  | 0x00 | 
+| Wave Search FWD |  |  | 0x00 | 
+| Call Search BWD |  |  | 0x00 | 
+| Call Search FWD |  |  | 0x00 | 
+| Delete |  |  | 0x00 | 
+| Memory |  |  | 0x00 |
+| Eject  |  |  | 0x00 | 
+| Lock  |  |  | 0x00 | 
+| TOUCH/BREAK  | 8 | -- | 0-254 | 
+| RELEASE/START  | 9 | -- | 0-254 | 
+| Jog Mode  |  |  | 0x00 |  
+| Tempo Range  |  |  | 0x00 | 
+| Master Tempo |  |  |  | 0x00 | 
+| Tempo Reset |  |  | 0x00 | 
+
+
+
