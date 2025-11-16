@@ -108,12 +108,12 @@ The Jog wheen data and the Tempo pitch control data are not sent here, as they a
 ### Panel outputs
 | Item |  Byte| Bit | Bit Mask |
 |:---|:---:|:---:|:---:|
-| PLAY  |  |  | 0x00 | 
-| Track  FWD  |  |  | 0x00 | 
-| Track  BWD  |  |  | 0x00 | 
-| Track Search FWD  |  |  | 0x00 | 
-| Track Search BWD  | 2 | 4 | 0x10 | 
-| CUE  | 3 | 6 | 0x40 | 
+| PLAY  | 3 | 7 | 0x80 |
+| CUE  | 3 | 6 | 0x40 |
+| Track Search FWD  | 3 | 5 | 0x20 | 
+| Track Search BWD  | 3 | 4 | 0x10 | 
+| Track  FWD  | 3 | 3 | 0x08 | 
+| Track  BWD  | 3 | 2 | 0x04 | 
 | CUE A  | 4 | 7 | 0x80 | 
 | CUE B  | 4 | 6 | 0x40 | 
 | CUE C  | 4 | 5 | 0x20 | 
